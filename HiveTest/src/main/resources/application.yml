@@ -1,0 +1,19 @@
+hive:
+  url: jdbc:hive2://hserver1:10000
+  driver-class-name: org.apache.hive.jdbc.HiveDriver
+  type: com.alibaba.druid.pool.DruidDataSource
+  user: root
+  password: 123456
+  initialSize: 1
+  minIdle: 3
+  maxActive: 20
+  maxWait: 60000
+  timeBetweenEvictionRunsMillis: 60000
+  minEvictableIdleTimeMillis: 40000
+  validationQuery: select 1
+  testWhileIdle: true
+  testOnBorrow: false
+  testOnReturn: false
+  # 打开PSCache，并且指定每个连接上PSCache的大小
+  poolPreparedStatements: true
+  maxPoolPreparedStatementPerConnectionSize: 20

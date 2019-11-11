@@ -1,0 +1,6 @@
+hbase:
+  config:
+    hbase.zookeeper.quorum: hserver1,hserver2,hserver3
+    hbase.zookeeper.port: 2181
+
+
