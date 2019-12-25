@@ -1,0 +1,7 @@
+server:
+  port: 8080
+# D:\software\hadoop\spark-2.4.0-bin-hadoop2.7
+spark:
+  spark-home:
+  app-name: sparkTestSpark
+  master: local
